@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0 "> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Asic Miner</title>
+
+    <!-- fabicon -->
+    <link rel="icon" type="image/png" sizes="56x56" href="images/logo2.PNG">
+
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" />
+
+
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="css/easy-responsive-tabs.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+   .carousel_nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px; /* Atur ruang padding sesuai kebutuhan */
+    outline: none;
+}
+
+.carousel_nav button img {
+    width: 60px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: auto;
+}
+
+
+    </style>
+<script>
+    function showPrevOne() {
+        document.getElementById("2").style.display = "none"; // Hide tab with id 2
+        document.getElementById("1").style.display = "block"; // Show tab with id 1
+    }
+
+    function showNextOne() {
+        document.getElementById("1").style.display = "none"; // Hide tab with id 1
+        document.getElementById("2").style.display = "block"; // Show tab with id 2
+    }
+
+    function showPrevTwo() {
+        document.getElementById("3").style.display = "none"; // Hide tab with id 3
+        document.getElementById("2").style.display = "block"; // Show tab with id 2
+    }
+
+    function showNextTwo() {
+        document.getElementById("2").style.display = "none"; // Hide tab with id 2
+        document.getElementById("3").style.display = "block"; // Show tab with id 3
+    }
+    function showPrevThree() {
+        document.getElementById("4").style.display = "none"; // Hide tab with id 4
+        document.getElementById("3").style.display = "block"; // Show tab with id 3
+    }
+
+    function showNextThree() {
+        document.getElementById("3").style.display = "none"; // Hide tab with id 3
+        document.getElementById("4").style.display = "block"; // Show tab with id 4
+    }
+    function showPrevFour() {
+        document.getElementById("5").style.display = "none"; // Hide tab with id 4
+        document.getElementById("4").style.display = "block"; // Show tab with id 3
+    }
+
+    function showNextFour() {
+        document.getElementById("4").style.display = "none"; // Hide tab with id 3
+        document.getElementById("5").style.display = "block"; // Show tab with id 4
+    }
+    function showPrevFive() {
+        document.getElementById("6").style.display = "none"; // Hide tab with id 4
+        document.getElementById("5").style.display = "block"; // Show tab with id 3
+    }
+
+    function showNextFive() {
+        document.getElementById("5").style.display = "none"; // Hide tab with id 3
+        document.getElementById("6").style.display = "block"; // Show tab with id 4
+    }
+    function showPrevSix() {
+        document.getElementById("7").style.display = "none"; // Hide tab with id 4
+        document.getElementById("6").style.display = "block"; // Show tab with id 3
+    }
+
+    function showNextSix() {
+        document.getElementById("6").style.display = "none"; // Hide tab with id 3
+        document.getElementById("7").style.display = "block"; // Show tab with id 4
+    }
+    function showPrevSeven() {
+        document.getElementById("8").style.display = "none"; // Hide tab with id 4
+        document.getElementById("7").style.display = "block"; // Show tab with id 3
+    }
+
+    function showNextSeven() {
+        document.getElementById("7").style.display = "none"; // Hide tab with id 3
+        document.getElementById("8").style.display = "block"; // Show tab with id 4
+    }
+    function showPrevEight() {
+        document.getElementById("9").style.display = "none"; // Hide tab with id 4
+        document.getElementById("8").style.display = "block"; // Show tab with id 3
+    }
+
+    function showNextEight() {
+        document.getElementById("8").style.display = "none"; // Hide tab with id 3
+        document.getElementById("9").style.display = "block"; // Show tab with id 4
+    }
+    function showPrevNine() {
+        document.getElementById("10").style.display = "none"; // Hide tab with id 4
+        document.getElementById("9").style.display = "block"; // Show tab with id 3
+    }
+
+    function showNextNine() {
+        document.getElementById("9").style.display = "none"; // Hide tab with id 3
+        document.getElementById("10").style.display = "block"; // Show tab with id 4
+    }
+    function showPrevTen() {
+        document.getElementById("11").style.display = "none"; // Hide tab with id 4
+        document.getElementById("10").style.display = "block"; // Show tab with id 3
+    }
+
+    function showNextTen() {
+        document.getElementById("10").style.display = "none"; // Hide tab with id 3
+        document.getElementById("11").style.display = "block"; // Show tab with id 4
+    }
+    function showPrevEleven() {
+        document.getElementById("1").style.display = "none"; // Hide tab with id 4
+        document.getElementById("11").style.display = "block"; // Show tab with id 3
+    }
+
+    function showNextEleven() {
+        document.getElementById("11").style.display = "none"; // Hide tab with id 3
+        document.getElementById("1").style.display = "block"; // Show tab with id 4
+    }
+</script>
+
+
+
+    
+</head>
+
+<body>
+    <div class="page-hazy-shape" style="background-image: url(images/page-hazy-img.png);">
+    </div>
+
+    <!-- PAGE TOP SEC -->
+    <div class="page-top-sec" id="home">
+        <img src="images/page-top-glow.png" alt="" class="page-top-glow">
+        <img src="images/top-sec-btm-glow.png" alt="" class="lft-btm-glow">
+        <div class="page-top-sec-in">
+
+            <!-- MAIN HEADER -->
+            <header class="main-head">
+                <div class="container full">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo1.png" alt="">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="stick"></span>
+                            </button>
+                            <ul class="navbar-nav ms-auto">
+                                <li class="current-menu-item"><a href="#home">Home</a></li>
+                                <li><a href="#product">Key features</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#benefits">How It Works</a></li>
+                                <li><a href="#tokenomics">Tokenomics</a></li>
+                                <li><a href="#roadmap">Roadmap</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-bar-rht">
+                            <a href="" class="nav-rht-btn cmn-btn" target="_blank"><span>$</span>ASIC</a>
+                        </div>
+                        <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="stick"></span>
+                        </button>
+                    </nav>
+                </div>
+                <button class="navbar-toggler" id="navoverlay" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"></button>
+            </header>
+            <!-- MAIN HEADER -->
+
+            <!-- MAIN BANNER -->
+            <section class="main-banner">
+                <div class="banner-cntnt-wpr">
+                    <div class="banner-row row g-0">
+                        <div class="banner-lft-col">
+                            <div class="banner-lft-cntnt">
+                                <div class="banner-sub-hdng" data-move="up">
+                                    <img src="images/star-grp.svg" alt="">
+                                    <p>AI SOLUTIONS FOR WEB 3.0 & DIGITAL BUSINESSES</p>
+                                </div>
+                                <h1 data-move="up">
+                                    ASIC MINER
+                                </h1>
+                                <div class="banner-sub-txt" data-move="up">
+                                    <p>
+                                        HARNESS THE POWER OF DECENTRALIZED AI WITH ASIC MINER
+                                    </p>
+                                </div>
+                                <div class="banner-btn-wpr" data-move="up">
+                                    <a href="https://utility-asic.vercel.app/" class="cmn-btn" target="_blank">DAPP</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-rht-col">
+                            <div class="banner-stars-wpr">
+                                <img src="images/single-stars.svg" alt="" class="star1">
+                                <img src="images/single-stars.svg" alt="" class="star2">
+                                <img src="images/single-stars.svg" alt="" class="star3">
+                            </div>
+                            <img src="images/banner-glow-shape.png" alt="" class="banner-glow-shape">
+                            <div class="banner-img-wpr">
+                                <img src="images/asm.png" data-move="scale-up" alt="">
+                                <img src="images/banner-box-shape.png" alt="" class="banner-box-shape">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- MAIN BANNER -->
+        </div>
+        <!-- BANNER BTM SEC -->
+        <div class="banner-btm-sec">
+            <img src="images/banner-btm-line.png" alt="" class="line-shape">
+            <span class="brand-icon">
+                <span>
+                    <img src="images/logo2.PNG" alt="">
+                </span>
+            </span>
+        </div>
+        <!-- BANNER BTM SEC -->
+    </div>
+
+    <!-- PRODUCT SEC -->
+    <section class="product-sec" id="product">
+        <div class="product-sec-in">
+            <img src="images/spiral-shape.svg" alt="" class="bg-shape1">
+            <div class="container">
+                <div class="product-tab-wpr">
+                    <!--Horizontal Tab-->
+                    <div id="" class="product-tab">
+                        <div class="resp-tabs-container product-tab-identyfire">
+                            <!-- Tab 1: User-Friendly Interface -->
+                            <div class="each-tab-cntnt" id="1" style="display: block;">
+                                <div class="product-row row g-0">
+                                    <div class="product-lft-col col-lg-7">
+                                        <div class="product-img-wpr" data-slide="right">
+                                            <img src="images/ss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-rht-col col-lg-5">
+                                        <div class="product-rht-cntnt" data-move="up">
+                                            <h2 class="product-tab-title">
+                                                User-Friendly <span class="grdnt-txt">Interface</span>
+                                            </h2>
+                                            <div class="product-cntnt-para">
+                                                <p>
+                                                    ASIC MINER features an intuitive user interface that simplifies the setup, configuration, and monitoring of mining operations. With user-friendly controls and real-time performance metrics, miners can easily manage their ASIC MINER devices with minimal effort.
+                                                </p>
+                                                <!-- Navigation buttons -->
+                                                <div class="carousel_nav">
+                                                    <button type="button" class="testi-left_arrow"  ><img src="images/prev.png" alt=""></button>
+                                                    <button type="button" class="testi-right_arrow" onclick="showNextOne()"><img src="images/next.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Repeat the structure for other tabs -->  
+                            <div class="each-tab-cntnt" id="2" style="display: none;">
+                                <div class="product-row row g-0">
+                                    <div class="product-lft-col col-lg-7">
+                                        <div class="product-img-wpr" data-slide="right">
+                                            <img src="images/ss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-rht-col col-lg-5">
+                                        <div class="product-rht-cntnt" data-move="up">
+                                            <h2 class="product-tab-title">
+                                                <span class="grdnt-txt">Optimized Mining </span> Strategies
+                                            </h2>
+                                            <div class="product-cntnt-para">
+                                                <p>
+                                                    AI algorithms can analyze market trends, transaction data, and network conditions in real-time to optimize mining strategies. This includes dynamically adjusting hash rates, selecting the most profitable coins to mine, and anticipating changes in network difficulty.
+                                                </p>
+                                                <!-- Navigation buttons -->
+                                                <div class="carousel_nav">
+                                                    <button type="button" class="testi-left_arrow"  onclick="showPrevOne()"><img src="images/prev.png" alt=""></button>
+                                                    <button type="button" class="testi-right_arrow" onclick="showNextTwo()"><img src="images/next.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="each-tab-cntnt" id="3" style="display: none;">
+                                <div class="product-row row g-0">
+                                    <div class="product-lft-col col-lg-7">
+                                        <div class="product-img-wpr" data-slide="right">
+                                            <img src="images/ss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-rht-col col-lg-5">
+                                        <div class="product-rht-cntnt" data-move="up">
+                                            <h2 class="product-tab-title">
+                                                <span class="grdnt-txt">Autonomous</span> Decision-Making
+                                            </h2>
+                                            <div class="product-cntnt-para">
+                                                <p>
+                                                    AI algorithms can automate decision-making processes such as coin selection, mining pool selection, and resource allocation based on predefined objectives and constraints. This reduces the need for manual intervention and improves operational efficiency.
+    
+                                                </p>
+                                                <!-- Navigation buttons -->
+                                                <div class="carousel_nav">
+                                                    <button type="button" class="testi-left_arrow" onclick="showPrevTwo()"><img src="images/prev.png" alt=""></button>
+                                                    <button type="button" class="testi-right_arrow" onclick="showNextThree()"><img src="images/next.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="each-tab-cntnt" id="4" style="display: none;">
+                                <div class="product-row row g-0">
+                                    <div class="product-lft-col col-lg-7">
+                                        <div class="product-img-wpr" data-slide="right">
+                                            <img src="images/ss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-rht-col col-lg-5">
+                                        <div class="product-rht-cntnt" data-move="up">
+                                            <h2 class="product-tab-title">
+                                                <span class="grdnt-txt">Predictive </span> Maintenance
+                                            </h2>
+                                            <div class="product-cntnt-para">
+                                                <p>
+                                                    AI-powered predictive maintenance algorithms can monitor the health and performance of ASIC hardware in real-time, detecting anomalies, predicting failures, and scheduling maintenance to minimize downtime and maximize productivity.
+    
+                                                </p>
+                                                <!-- Navigation buttons -->
+                                                <div class="carousel_nav">
+                                                    <button type="button" class="testi-left_arrow" onclick="showPrevThree()"><img src="images/prev.png" alt=""></button>
+                                                    <button type="button" class="testi-right_arrow" onclick="showNextFour()"><img src="images/next.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="each-tab-cntnt" id="5" style="display: none;">
+                                <div class="product-row row g-0">
+                                    <div class="product-lft-col col-lg-7">
+                                        <div class="product-img-wpr" data-slide="right">
+                                            <img src="images/ss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-rht-col col-lg-5">
+                                        <div class="product-rht-cntnt" data-move="up">
+                                            <h2 class="product-tab-title">
+                                                <span class="grdnt-txt">Energy Efficiency</span> Optimization
+                                            </h2>
+                                            <div class="product-cntnt-para">
+                                                <p>
+                                                    AI algorithms can optimize energy consumption by dynamically adjusting power usage based on workload demands and energy prices. This includes optimizing clock frequencies, voltage levels, and cooling systems to maximize efficiency while maintaining optimal performance.
+    
+                                                </p>
+                                                <!-- Navigation buttons -->
+                                                <div class="carousel_nav">
+                                                    <button type="button" class="testi-left_arrow" onclick="showPrevFour()"><img src="images/prev.png" alt=""></button>
+                                                    <button type="button" class="testi-right_arrow" onclick="showNextFive()"><img src="images/next.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="each-tab-cntnt" id="6" style="display: none;">
+                                <div class="product-row row g-0">
+                                    <div class="product-lft-col col-lg-7">
+                                        <div class="product-img-wpr" data-slide="right">
+                                            <img src="images/ss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-rht-col col-lg-5">
+                                        <div class="product-rht-cntnt" data-move="up">
+                                            <h2 class="product-tab-title">
+                                                <span class="grdnt-txt">Security</span> Enhancement
+                                            </h2>
+                                            <div class="product-cntnt-para">
+                                                <p>
+                                                    AI-powered security features can detect and mitigate threats such as hacking attempts, malware, and distributed denial-of-service (DDoS) attacks in real-time, enhancing the overall security posture of ASIC mining operations.
+    
+                                                </p>
+                                                <!-- Navigation buttons -->
+                                                <div class="carousel_nav">
+                                                    <button type="button" class="testi-left_arrow" onclick="showPrevFive()"><img src="images/prev.png" alt=""></button>
+                                                    <button type="button" class="testi-right_arrow" onclick="showNextSix()"><img src="images/next.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="each-tab-cntnt" id="7" style="display: none;">
+                                <div class="product-row row g-0">
+                                    <div class="product-lft-col col-lg-7">
+                                        <div class="product-img-wpr" data-slide="right">
+                                            <img src="images/ss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-rht-col col-lg-5">
+                                        <div class="product-rht-cntnt" data-move="up">
+                                            <h2 class="product-tab-title">
+                                                <span class="grdnt-txt">Security</span> Enhancement
+                                            </h2>
+                                            <div class="product-cntnt-para">
+                                                <p>
+                                                    AI-powered security features can detect and mitigate threats such as hacking attempts, malware, and distributed denial-of-service (DDoS) attacks in real-time, enhancing the overall security posture of ASIC mining operations.
+    
+                                                </p>
+                                                <!-- Navigation buttons -->
+                                                <div class="carousel_nav">
+                                                    <button type="button" class="testi-left_arrow" onclick="showPrevSix()"><img src="images/prev.png" alt=""></button>
+                                                    <button type="button" class="testi-right_arrow" onclick="showNextSeven()"><img src="images/next.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="each-tab-cntnt" id="8" style="display: none;">
+                                <div class="product-row row g-0">
+                                    <div class="product-lft-col col-lg-7">
+                                        <div class="product-img-wpr" data-slide="right">
+                                            <img src="images/ss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-rht-col col-lg-5">
+                                        <div class="product-rht-cntnt" data-move="up">
+                                            <h2 class="product-tab-title">
+                                                <span class="grdnt-txt">Adaptive Hash Rate</span> Adjustment
+                                            </h2>
+                                            <div class="product-cntnt-para">
+                                                <p>
+                                                    AI algorithms can dynamically adjust hash rates based on network conditions, mining difficulty, and profitability factors. This ensures optimal performance and resource utilization under varying market conditions.
+    
+                                                </p>
+                                                <!-- Navigation buttons -->
+                                                <div class="carousel_nav">
+                                                    <button type="button" class="testi-left_arrow" onclick="showPrevSeven()"><img src="images/prev.png" alt=""></button>
+                                                    <button type="button" class="testi-right_arrow" onclick="showNextEight()"><img src="images/next.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="each-tab-cntnt" id="9" style="display: none;">
+                                <div class="product-row row g-0">
+                                    <div class="product-lft-col col-lg-7">
+                                        <div class="product-img-wpr" data-slide="right">
+                                            <img src="images/ss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-rht-col col-lg-5">
+                                        <div class="product-rht-cntnt" data-move="up">
+                                            <h2 class="product-tab-title">
+                                                <span class="grdnt-txt">Fault Tolerance </span>and Redundancy
+                                            </h2>
+                                            <div class="product-cntnt-para">
+                                                <p>
+                                                    AI-based fault tolerance mechanisms can detect and recover from hardware failures or performance degradation in real-time, ensuring continuous operation and minimizing disruptions to mining operations.
+    
+                                                </p>
+                                                <!-- Navigation buttons -->
+                                                <div class="carousel_nav">
+                                                    <button type="button" class="testi-left_arrow" onclick="showPrevEight()"><img src="images/prev.png" alt=""></button>
+                                                    <button type="button" class="testi-right_arrow" onclick="showNextNine()"><img src="images/next.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="each-tab-cntnt" id="10" style="display: none;">
+                                <div class="product-row row g-0">
+                                    <div class="product-lft-col col-lg-7">
+                                        <div class="product-img-wpr" data-slide="right">
+                                            <img src="images/ss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-rht-col col-lg-5">
+                                        <div class="product-rht-cntnt" data-move="up">
+                                            <h2 class="product-tab-title">
+                                                <span class="grdnt-txt">Continuous Learning</span> and Adaptation
+                                            </h2>
+                                            <div class="product-cntnt-para">
+                                                <p>
+                                                    AI-powered ASIC miners can continuously learn from past experiences, adapt to changing market conditions, and improve performance over time through machine learning and reinforcement learning techniques.
+    
+                                                </p>
+                                                <!-- Navigation buttons -->
+                                                <div class="carousel_nav">
+                                                    <button type="button" class="testi-left_arrow" onclick="showPrevNine()"><img src="images/prev.png" alt=""></button>
+                                                    <button type="button" class="testi-right_arrow" onclick="showNextTen()"><img src="images/next.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="each-tab-cntnt" id="11" style="display: none;">
+                                <div class="product-row row g-0">
+                                    <div class="product-lft-col col-lg-7">
+                                        <div class="product-img-wpr" data-slide="right">
+                                            <img src="images/ss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-rht-col col-lg-5">
+                                        <div class="product-rht-cntnt" data-move="up">
+                                            <h2 class="product-tab-title">
+                                            	<span class="grdnt-txt">Dynamic Workload</span> Management
+                                            </h2>
+                                            <div class="product-cntnt-para">
+                                                <p>
+                                                    AI-based workload management systems can allocate computing resources dynamically based on changing workload demands, ensuring optimal performance and resource utilization across multiple mining tasks and operations.
+    
+                                                </p>
+                                                <!-- Navigation buttons -->
+                                                <div class="carousel_nav">
+                                                    <button type="button" class="testi-left_arrow" onclick="showPrevTen()"><img src="images/prev.png" alt=""></button>
+                                                    <button type="button" class="testi-right_arrow" onclick="showNextEleven()"><img src="images/next.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                    <img src="images/single-stars.svg" alt="" class="star1">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PRODUCT SEC -->
+
+    <!-- ABOUT SEC -->
+    <section class="about-sec" id="about">
+        <img src="images/about-left-overlay.png" alt="" class="about-bg-overlay">
+        <div class="about-sec-in">
+            <img src="images/spiral-shape2.svg" alt="" class="about-bg-shape">
+            <div class="container">
+                <div class="about-sec-cntnt-wpr">
+                    <div class="about-row row g-0">
+                        <div class="about-lft-col">
+                            <div class="about-lft-cntnt">
+                                <h2 class="about-cntnt-title"><span class="grdnt-txt">About</span> Asic Miner</h2>
+                                <div class="about-para">
+                                    <p>
+                                        The fusion of decentralized artificial intelligence (AI) with Application-Specific Integrated Circuit (ASIC) miner technology heralds a new era of innovation and efficiency in the digital landscape. This abstract provides a succinct overview of the transformative potential and key insights explored in the whitepaper "Harness the Power of Decentralized AI with ASIC Miner".
+
+                                    </p>
+                                </div>
+                                <div class="about-btn-wpr">
+                                    <a href="" class="cmn-btn" target="_blank">BUY $ASIC</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-rht-col">
+                            <div class="about-rht-cntnt">
+                                <img src="images/single-stars.svg" alt="" class="star1">
+                                <img src="images/single-stars.svg" alt="" class="star2">
+                                <div class="chatbox-card">
+                                    <div class="chatbox-hdr">
+                                        <div class="chatbox-icon">
+                                            <img src="images/logo2.png" alt="">
+                                        </div>
+                                        <div class="chatbox-hrd-rht">
+                                            <img src="images/minus-icon.svg" alt="">
+                                            <img src="images/cross-icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="chatbox-body">
+                                        <img src="images/chatbox-body-overlay.png" alt="" class="bg-overlay">
+                                        <div class="chatbox-body-top">
+                                            <div class="chatbox-body-icon">
+                                                <img src="images/logo2.png" alt="">
+                                            </div>
+                                            <h4 class="user-name">Asic Miner</h4>
+                                        </div>
+                                        <div class="chat-msg-top">
+                                            <div class="chat-msg-icon">
+                                                <span class="active-dot"></span>
+                                                <img src="images/logo2.png" alt="">
+                                            </div>
+                                            <p>
+                                                Hello, I would like to order some ASIC mining devices. Can you help me?
+                                            </p>
+                                        </div>
+                                        <div class="chat-msg-btm">
+                                            <p>
+                                                Of course, we have several suitable options. How much do you need?
+                                            </p>
+                                        </div>
+                                        <div class="chat-msg-top">
+                                            <div class="chat-msg-icon">
+                                                <span class="active-dot"></span>
+                                                <img src="images/logo2.png" alt="">
+                                            </div>
+                                            <p>
+                                                I need five units with the best specifications.
+                                            </p>
+                                        </div>
+                                        <div class="chat-msg-btm">
+                                            <p>
+                                                Fine, I will prepare the order for you. We also provide installation and warranty services.
+                                            </p>
+                                        </div>
+                                        <div class="chat-footer">
+                                            <span class="msg-box">
+                                                Type Message
+                                            </span>
+                                            <div class="chat-send-icon">
+                                                <img src="images/chat-send-icon.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SEC -->
+
+
+    <!-- Benefits SECTION -->
+    <section class="benefits-block" id="benefits">
+        <img src="images/bn-hlf-circle.svg" class="bn-hlf-circle" alt="">
+        <img src="images/bn-elm.png" class="bn-elm" alt="">
+        <img src="images/bn-looper-graphics.png" class="bn-looper-graphics" alt="">
+        <div class="container">
+            <div class="benefits-wrap">
+                <img src="images/take-star-icon.svg" class="bn-star-one" alt="">
+                <div class="benefits-head">
+                    <h2 data-move="up"><span class="grdnt-txt">HOW IT WORKS</span></h2>
+                    <p data-move="up">Our platform is where complexity meets simplicity, providing a seamless interface for clients to tap into a global network of  ASIC  MINER.</p>
+                </div>
+                <div class="benefits-wrap-data">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="benefits-data">
+                                <div class="benefits-data-item">
+                                    <div class="benefits-data-icon">
+                                        <img src="images/bn-iconm-circle.png" class="bn-iconm-circle" alt="">
+                                        <img src="images/bn-st-circle.png" class="bn-st-circle" alt="">
+                                        <img src="images/bn-icon1.svg" class="bn-icon" alt="">
+                                    </div>
+                                    <div class="benefits-data-content">
+                                        <h3>TASK SUBMISSION AND DISTRIBUTION</h3>
+                                        <p>Clients submit their computational tasks to  Asic Miner, where they are instantly distributed across our secure network of high-performance  Asic Miner.</p>
+                                    </div>
+                                </div>
+                                <div class="benefits-data-item">
+                                    <div class="benefits-data-icon">
+                                        <img src="images/bn-iconm-circle.png" class="bn-iconm-circle" alt="">
+                                        <img src="images/bn-st-circle.png" class="bn-st-circle" alt="">
+                                        <img src="images/bn-icon2.svg" class="bn-icon" alt="">
+                                    </div>
+                                    <div class="benefits-data-content">
+                                        <h3>PROCESSING AND VERIFICATION</h3>
+                                        <p>The tasks are processed in parallel, harnessing the power of the L1 Blockchain for secure, efficient, and verifiable computation.</p>
+                                    </div>
+                                </div>
+                                <div class="benefits-data-item">
+                                    <div class="benefits-data-icon">
+                                        <img src="images/bn-iconm-circle.png" class="bn-iconm-circle" alt="">
+                                        <img src="images/bn-st-circle.png" class="bn-st-circle" alt="">
+                                        <img src="images/bn-icon3.svg" class="bn-icon" alt="">
+                                    </div>
+                                    <div class="benefits-data-content">
+                                        <h3>SECURE DELIVERY</h3>
+                                        <p>Verified results are encrypted and returned to the clients promptly, ensuring confidentiality and integrity.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="benefits-media-wrap">
+                                <div class="benefits-media-outer">
+                                    <div class="benefits-media" data-slide="left">
+                                        <img src="images/btn.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="benefit-btn-wpr text-center">
+                    <a href="" class="cmn-btn" target="_blank">BUY <span>$</span>ASIC</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Benefits SECTION -->
+
+    <!-- Tokenomics SECTION -->
+    <section class="token-block" id="tokenomics">
+        <div class="container">
+            <div class="token-block-wrap">
+                <img src="images/take-star-icon.svg" class="tk-star-one" alt="">
+                <img src="images/take-star-icon.svg" class="tk-star-two" alt="">
+                <img src="images/take-star-icon.svg" class="tk-star-three" alt="">
+                <div class="token-block-head">
+                    <h2 data-move="up"><span class="grdnt-txt">Tokenomics</span></h2>
+                    <p data-move="up">Asic Miner's tokenomics drive ecosystem growth and sustainability with a 4% transaction tax
+                        supporting development, holders, and liquidity. Our Ethereum-based subscription and
+                        revenue-sharing models incentivize long-term investment and community loyalty. Stake $ASIC for
+                        rewards and revenue shares, ensuring your role in our innovative and successful future.</p>
+                    <div class="token-head-subtitle" data-move="up">Token Name: <span>ASIC MINER</span></div>
+                </div>
+                <div class="token-block-anim">
+                    <div class="token-block-anim-row">
+                        <div class="token-block-anim-left">
+                            <ul class="token-block-anim-left-list">
+                                <li class="token-list-item">
+                                    <div class="token-list-title">Total Supply: <span>100.000.000</span></div>
+                                    <div class="token-list-line">
+                                        <img src="images/line1.svg" alt="line">
+                                        <span class="token-list-line-dotted"></span>
+                                    </div>
+                                </li>
+                                <li class="token-list-item">
+                                    <div class="token-list-title">Symbol: <span>$ASIC</span></div>
+                                    <div class="token-list-line">
+                                        <img src="images/line2.svg" alt="line">
+                                        <span class="token-list-line-dotted"></span>
+                                    </div>
+                                </li>
+                                <li class="token-list-item">
+                                    <div class="token-list-title">Network: <span>ETH (ERC-20)</span></div>
+                                    <div class="token-list-line">
+                                        <img src="images/line3.svg" alt="line">
+                                        <span class="token-list-line-dotted"></span>
+                                    </div>
+                                </li>
+                                <li class="token-list-item">
+                                    <div class="token-list-title">Buy/Sell Tax: <span>5% / 5%</span></div>
+                                    <div class="token-list-line">
+                                        <img src="images/line4.svg" alt="line">
+                                        <span class="token-list-line-dotted"></span>
+                                    </div>
+                                </li>
+                                <li class="token-list-item">
+                                    <div class="token-list-title">Contract Address: <span>xxx.xxx.xxx.xxx</span></div>
+                                    <div class="token-list-line">
+                                        <img src="images/line5.svg" alt="line">
+                                        <span class="token-list-line-dotted"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="token-block-anim-center">
+                            <div class="token-block-anim-center-graphics">
+                                <div class="token-block-anim-center-graphics-inner">
+                                    <!-- <img src="images/logo2.PNG" class="graphics-inner-logo" alt="" style="width: 25%;"> -->
+                                    <!-- <img src="images/graphics-inner.png" class="graphics-inner" alt=""> -->
+                                    <img src="images/asm1.png" class="graphics-outer" alt="" style="width: 90%;padding-left: 40px;">
+                                </div>
+                                <img src="images/graphics-elps.png" class="graphics-elps" alt="">
+                            </div>
+                        </div>
+                        <div class="token-block-anim-right">
+                            <div class="token-block-anim-right-box">
+                                <div class="token-block-anim-right-box-item">
+                                    <img src="images/el-pls.png" class="el-pls" alt="">
+                                    <div class="left-token-list-line">
+                                        <span class="left-token-list-line-dotted"></span>
+                                        <img src="images/lft-f-line.svg" alt="line">
+                                    </div>
+                                    <div class="int-ele-box">
+                                        <div class="int-ele-box-inner">
+                                            <h3>Supply:</h3>
+                                            <ul>
+                                                <li>5% CEX</li>
+                                                <li>5% lagi Asic Mining</li>
+                                                <li>90% Liquid</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="token-block-anim-right-box-item">
+                                    <img src="images/el-pls.png" class="el-pls" alt="">
+                                    <div class="left-token-list-line">
+                                        <span class="left-token-list-line-dotted"></span>
+                                        <img src="images/lft-s-line.svg" alt="line">
+                                    </div>
+                                    <div class="int-ele-box">
+                                        <div class="int-ele-box-inner">
+                                            <h3>Buy/Sell Tax Allocations:</h3>
+                                            <ul>
+                                                <li>2% For ASIC MINER Expansion & Maintenance</li>
+                                                <li>2% For Marketing</li>
+                                                <li>1% BUYBACK</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="token-block-btn">
+                    <a href="" target="_blank" class="cmn-btn">BUY $ASIC</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tokenomics SECTION -->
+
+    <!-- Roadmap section -->
+    <div class="roadmap" id="roadmap">
+        <div class="container">
+            <div class="sec-hd">
+                <h2 data-move="up"><span class="grdnt-txt">RoadMap</span></h2>
+                <p data-move="up">Embark on a journey with Asic Miner as we unfold our roadmap designed to revolutionize the digital
+                    ecosystem. From laying a solid foundation and development, through expanding our reach and engaging
+                    with our community, to achieving sustainability and planning for the future, each phase marks a step
+                    towards innovation, growth, and success. Join us as we navigate these exciting phases, building a
+                    platform that not only meets today's needs but paves the way for tomorrow's solutions.</p>
+            </div>
+            <div class="roadmap-all">
+                <div class="roadmap-row row">
+                    <div class="col-lg-4 col-md-6 roadmap-col">
+                        <div class="roadmap-box">
+                            <div class="roadmap-box-heading">
+                                <span class="roadmap-subhd">Phase 1</span>
+                                <h3>Foundation and Development</h3>
+                            </div>
+                            <div class="roadmap-shpbox">
+                                <i class="roadmap-icon"><img src="images/roadmap-icon.svg" alt="roadmap-icon"></i>
+                                <span class="roadmap-brdr-icon"><img src="images/roadmap-brdr-icon.png"
+                                        alt="roadmap-brdr-icon"></span>
+                            </div>
+                            <div class="roadmap-box-cont">
+                                <ul class="roadmap-box-list">
+                                    <li>Whitepaper Release</li>
+                                    <li>Seed Round Investments</li>
+                                    <li>Development of ASIC MINER Platform</li>
+                                    <li>Beta Platform Launch</li>
+                                    <li>Iterate Based on Beta Feedback </li>
+                                </ul>
+                                <span class="roadmap-box-shp"><img src="images/roadmap-box-shp.svg"
+                                        alt="roadmap-box-shp"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 roadmap-col">
+                        <div class="roadmap-box">
+                            <div class="roadmap-box-heading">
+                                <span class="roadmap-subhd">Phase 2</span>
+                                <h3>Expansion and Engagement</h3>
+                            </div>
+                            <div class="roadmap-shpbox">
+                                <i class="roadmap-icon"><img src="images/roadmap-icon.svg" alt="roadmap-icon"></i>
+                                <span class="roadmap-brdr-icon"><img src="images/roadmap-brdr-icon.png"
+                                        alt="roadmap-brdr-icon"></span>
+                            </div>
+                            <div class="roadmap-box-cont">
+                                <ul class="roadmap-box-list">
+                                    <li>Website and Social Media Launch</li>
+                                    <li>Smart Contract Development</li>
+                                    <li>Token Launch</li>
+                                    <li>Community Building</li>
+                                    <li>Staking Programs</li>
+                                    <li>Strategic Partnerships</li>
+                                    <li>Public Beta Platform Launch</li>
+                                    <li>Telegram & Discord Integration</li>
+                                </ul>
+                                <span class="roadmap-box-shp"><img src="images/roadmap-box-shp.svg"
+                                        alt="roadmap-box-shp"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 roadmap-col">
+                        <div class="roadmap-box">
+                            <div class="roadmap-box-heading">
+                                <span class="roadmap-subhd">Phase 3</span>
+                                <h3>Maturation, Sustainability, and Future Planning</h3>
+                            </div>
+                            <div class="roadmap-shpbox">
+                                <i class="roadmap-icon"><img src="images/roadmap-icon.svg" alt="roadmap-icon"></i>
+                                <span class="roadmap-brdr-icon"><img src="images/roadmap-brdr-icon.png"
+                                        alt="roadmap-brdr-icon"></span>
+                            </div>
+                            <div class="roadmap-box-cont">
+                                <ul class="roadmap-box-list">
+                                    <li>Final Release of ASIC MINER Platform</li>
+                                    <li>Revenue Sharing Program</li>
+                                    <li>Partner Program</li>
+                                    <li>Expand Partnerships</li>
+                                    <li>White Label AI Bots for Projects, Businesses & Communities</li>
+                                    <li>Define Next Phases</li>
+                                </ul>
+                                <span class="roadmap-box-shp"><img src="images/roadmap-box-shp.svg"
+                                        alt="roadmap-box-shp"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- watch video section -->
+    <div class="watch-video">
+        <div class="container">
+            <div class="sec-hd text-center">
+                <h2 data-move="up"><span class="grdnt-txt">Watch</span> Our Video</h2>
+				 <p data-move="up">(Releasing Soon)</p>
+            </div>
+            <div class="watch-video-box-all" data-move="up">
+                <div class="watch-video-box-main">
+                    <div class="watch-video-box">
+                        <div class="watch-video-box-inner">
+                            <figure><img src="images/vidio.png" alt="watch-vid-cover"></figure>
+                            <a data-fancybox href="images/ask.mp4" class="play-vid-btn">
+                                <i><img src="images/play-vid-btn.svg" alt="play-vid-btn"></i>
+                                <span class="video-play-img"><img src="images/video-play-img.png"
+                                        alt="video-play-img"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <span class="vid-star vid-star-1"><img src="images/vid-star-1.svg" alt="vid-star-1"></span>
+                <span class="vid-star vid-star-2"><img src="images/vid-star-1.svg" alt="vid-star-1"></span>
+                <span class="vid-star vid-star-3"><img src="images/vid-star-1.svg" alt="vid-star-1"></span>
+            </div>
+        </div>
+        <span class="our-video-shp-1"><img src="images/our-video-shp-1.png" alt="our-video-shp-1"></span>
+    </div>
+<section class="social-sec" data-anim="parent-anim-sec">
+        <div class="social-sec-in">
+            <div class="container">
+                <div class="social-sec-hdr">
+                    <span class="hdng-tag" data-move="up" style="opacity: 1; transform: translate(0px);">Get Involved</span>
+                    <h2 data-move="up" style="opacity: 1; transform: translate(0px);">Join the <span class="grdnt-txt">ASIC MINER AI Community</span></h2>
+                </div>
+                <div class="social-row row">
+                    <div class="social-col col-sm-6 col-lg-3">
+                        <div class="social-card" data-move="up" style="opacity: 1; transform: translate(0px);">
+                            <div class="social-icon-wpr">
+                                <img src="images/tele.png" alt="">
+                            </div>
+                            <h3 class="social-card-title">Telegram</h3>
+                            <a href="https://t.me/AsicMinerPortal" target="_blank" class="cmn-btn">Asic Miner Telegram</a>
+                        </div>
+                    </div>
+                    <div class="social-col col-sm-6 col-lg-3">
+                        <div class="social-card" data-move="up" style="opacity: 1; transform: translate(0px);">
+                            <div class="social-icon-wpr">
+                                <img src="images/tw.png" alt="">
+                            </div>
+                            <h3 class="social-card-title">X/Twitter</h3>
+                            <a href="https://twitter.com/AsicMinerAI" target="_blank" class="cmn-btn">Asic Miner Twitter</a>
+                        </div>
+                    </div>
+                    <div class="social-col col-sm-6 col-lg-3">
+                        <div class="social-card" data-move="up" style="opacity: 1; transform: translate(0px);">
+                            <div class="social-icon-wpr">
+                                <img src="images/git.png" alt="">
+                            </div>
+                            <h3 class="social-card-title">Github</h3>
+                            <a href="https://github.com/AsicminerAI" target="_blank" class="cmn-btn">Asic Miner Github</a>
+                        </div>
+                    </div>
+                    <div class="social-col col-sm-6 col-lg-3">
+                        <div class="social-card" data-move="up" style="opacity: 1; transform: translate(0px);">
+                            <div class="social-icon-wpr">
+                                <img src="images/me.png" alt="">
+                            </div>
+                            <h3 class="social-card-title">Medium</h3>
+                            <a href="https://asicminerai.medium.com/" target="_blank" class="cmn-btn">Asic Miner Medium</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="upper-footer">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="images/logo1.png" alt="footer-logo" style="width: 50%;"></a>
+                </div>
+                <div class="footer-menu-main">
+                    <ul class="footer-menu">
+                        <li><a class="scroll" href="#home">Home</a></li>
+                        <li><a class="scroll" href="#product">Products</a></li>
+                        <li><a class="scroll" href="#about">About Us</a></li>
+                        <li><a class="scroll" href="#benefits">Benefits</a></li>
+                        <li><a class="scroll" href="#tokenomics">Tokenomics</a></li>
+                        <li><a class="scroll" href="#roadmap">Roadmap</a></li>
+                        <!-- <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Benefits</a></li>
+                        <li><a href="">Tokenomics</a></li>
+                        <li><a href="">Roadmap</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="lower-footer">
+                <div class="lower-footer-left">
+                    <ul class="social-media-list">
+                        <li><a href="https://twitter.com/AsicMinerAI" target="_blank"><img src="images/tw.png" alt="footer-social-2"></a></li>
+                        <li><a href="https://t.me/AsicMinerPortal" target="_blank"><img src="images/tele.png" alt="footer-social-4"></a></li>
+                        <li><a href="https://asicminerai.medium.com/" target="_blank"><img src="images/me.png" alt="footer-social-2"></a></li>
+                        <li><a href="https://github.com/AsicminerAI" target="_blank"><img src="images/git.png" alt="footer-social-4"></a></li>
+                    </ul>
+                </div>
+                <div class="lower-footer-right">
+                    <ul class="btm-ftr-list">
+                        <li>contact through email <a href="mailto:support@Asic Miner">support@Asic Miner</a></li>
+                        <li>© 2024, <a href="index.html">Asic Miner</a>, All rights reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <span class="footer-blur-shp"><img src="images/footer-blur-shp.png" alt="footer-blur-shp"></span>
+        <span class="footer-circ-shp-1"><img src="images/footer-circ-shp-1.svg" alt="footer-circ-shp-1"></span>
+    </footer>
+
+
+    <!-- <span id="scroll" style="display: none;"><i class="fas fa-angle-up"></i></span> -->
+
+
+
+    <!-- Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
